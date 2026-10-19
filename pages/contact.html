@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — Judd Resto</title>
+    <meta name="description" content="Adresse, horaires, téléphone et formulaire de contact de Judd Resto.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+        <div class="wrap bar">
+            <a class="logo" href="../index.html">Judd Resto</a>
+            <input type="checkbox" id="burger-toggle" class="burger-toggle" aria-label="Ouvrir ou fermer le menu">
+            <label class="burger" for="burger-toggle" aria-hidden="true">☰</label>
+            <nav id="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="reservation.html">Réservation</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="btn" href="reservation.html">Réserver</a>
+        </div>
+    </header>
+    <main id="contenu">
+        <section class="page-head">
+            <div class="wrap">
+                <h1>Contactez-nous</h1>
+                <p>Une question, une suggestion ou un événement à organiser ? Notre équipe vous répond avec plaisir,
+                    généralement sous 24 heures.</p>
+            </div>
+        </section>
+        <section class="wrap bloc">
+            <h2>Nos coordonnées</h2>
+            <div class="grille grille4">
+                <article class="card">
+                    <p class="icone" aria-hidden="true">📍</p>
+                    <h3>Adresse</h3>
+                    <address>25, rue Lamarre<br>Pétion-Ville, HT6140</address>
+                </article>
+                <article class="card">
+                    <p class="icone" aria-hidden="true">📞</p>
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+50937000000">+509 3700 0000</a></p>
+                </article>
+                <article class="card">
+                    <p class="icone" aria-hidden="true">✉️</p>
+                    <h3>Courriel</h3>
+                    <p><a href="mailto:contact@juddresto.com">contact@juddresto.com</a></p>
+                </article>
+                <article class="card">
+                    <p class="icone" aria-hidden="true">📱</p>
+                    <h3>Réseaux sociaux</h3>
+                    <p><a href="#">Facebook</a><br><a href="#">Instagram</a><br><a href="#">TikTok</a></p>
+                </article>
+            </div>
+        </section>
+        <section class="wrap bloc">
+            <h2>Écrivez-nous</h2>
+            <form id="form-contact" method="get" action="contact.html#merci">
+                <p><label for="c-nom">Nom *</label><input id="c-nom" name="nom" type="text" required minlength="2"
+                        maxlength="60" autocomplete="name"></p>
+                <p><label for="c-courriel">Courriel *</label><input id="c-courriel" name="courriel" type="email"
+                        required autocomplete="email"></p>
+                <p><label for="c-sujet">Sujet *</label><select id="c-sujet" name="sujet" required>
+                        <option value="">— Choisir —</option>
+                        <option>Question générale</option>
+                        <option>Événement privé</option>
+                        <option>Commentaire</option>
+                        <option>Autre</option>
+                    </select></p>
+                <p><label for="c-message">Message * (10 à 1 000 caractères)</label><textarea id="c-message"
+                        name="message" rows="6" required minlength="10" maxlength="1000"></textarea></p>
+                <p class="aide">Les champs marqués * sont obligatoires. Si un champ est indiqué en rouge, veuillez le
+                    vérifier.</p>
+                <p><button class="btn" type="submit">Envoyer le message</button></p>
+                <p id="merci" class="msg ok" role="status">Merci pour votre message ! Nous vous répondrons dans les plus
+                    brefs délais.</p>
+            </form>
+        </section>
+        <section class="wrap bloc">
+            <h2>Comment nous trouver</h2>
+            <p>Nous sommes facilement accessibles en transport en commun et en voiture. Un stationnement est disponible
+                à proximité du restaurant.</p>
+            <iframe class="plan" title="Plan d’accès au restaurant" loading="lazy"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-72.30,18.50,-72.27,18.52&amp;layer=mapnik"></iframe>
+            <p><a href="https://www.openstreetmap.org/directions?to=18.5125,-72.2853">Obtenir l’itinéraire</a></p>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap cols">
+            <section>
+                <h2>Judd Resto</h2>
+                <p>Une cuisine créole et internationale, faite avec cœur.</p>
+            </section>
+            <section>
+                <h2>Horaires</h2>
+                <ul>
+                    <li>Lundi : fermé</li>
+                    <li>Mar.–jeu. : 11 h 30 – 22 h</li>
+                    <li>Ven.–sam. : 11 h 30 – 23 h</li>
+                    <li>Dim. : 12 h – 21 h</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Nous joindre</h2>
+                <address>25, rue Lamarre, Pétion-Ville, HT6140<br>
+                    <a href="tel:+50937000000">+509 3700 0000</a><br>
+                    <a href="mailto:contact@juddresto.com">contact@juddresto.com</a>
+                </address>
+                <p><a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">TikTok</a></p>
+            </section>
+        </div>
+        <p class="wrap mentions">© 2026 Judd Resto. Tous droits réservés. · <a href="#">Politique de confidentialité</a>
+        </p>
+    </footer>
+</body>
+
+</html>
